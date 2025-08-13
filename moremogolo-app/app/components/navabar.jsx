@@ -8,23 +8,23 @@ const Navbar = () => {
   const navItems = ["Home", "About", "Contact", "Services", "Blog"];
 
   return (
-    <div className="w-full bg-white shadow-md fixed top-0 z-50 px-4">
-      {/* Logo + Navigation */}
-      <div className="flex justify-between items-center h-30 bg-[#ffc300] w-full">
+    <div className="w-full bg-white shadow-md fixed top-0 z-50">
+      {/* Main Navbar */}
+      <div className="flex items-center justify-between bg-[#ffc300] px-4 h-30">
+        
         {/* Logo - Far Left */}
-        <div className="text-xl font-bold text-gray-800 ml-5">
+        <div className="flex-shrink-0">
           <Image
             src="/images/moremogoloLogo.png"
             alt="Logo"
-            width={200}
-            height={200}
-            className="inline-block mt-30"
+            width={150}
+            height={150}
+            className="inline-block"
           />
-          
         </div>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 mr-50 ">
+        <nav className="hidden md:flex flex-1 justify-center space-x-8">
           {navItems.map((item, index) => (
             <span
               key={index}
@@ -46,7 +46,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden flex flex-col space-y-4 py-4">
+        <nav className="md:hidden flex flex-col space-y-4 py-4 items-center bg-white shadow-md">
           {navItems.map((item, index) => (
             <span
               key={index}
