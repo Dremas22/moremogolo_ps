@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./src/components/navabar";
+import Footer from "./src/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,14 +21,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* Navbar appears on every page automatically */}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
+        {/* Navbar at top */}
         <Navbar />
 
-        {/* Push page content below the navbar */}
-        <main style={{ paddingTop: "90px" }}>
+        {/* Main page content */}
+        <main className="flex-1" style={{ paddingTop: "90px" }}>
           {children}
         </main>
+
+        {/* Footer at bottom */}
+        <Footer />
       </body>
     </html>
   );
