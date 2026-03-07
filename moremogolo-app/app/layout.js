@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./src/components/navabar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Navbar appears on every page automatically */}
+        <Navbar />
+
+        {/* Push page content below the navbar */}
+        <main style={{ paddingTop: "90px" }}>
+          {children}
+        </main>
       </body>
     </html>
   );
