@@ -1,13 +1,19 @@
-import Navbar from "../src/components/navabar";
-
 export default function About() {
   return (
-    <>
-      <Navbar />
-      <div style={{ paddingTop: "90px", textAlign: "center" }}>
-        <h1 className="text-4xl font-bold mt-10">About Page</h1>
-        <p>Learn more about us on this page.</p>
-      </div>
-    </>
+    <div className="p-10 max-w-4xl mx-auto text-center">
+      <h1 className="text-4xl font-bold mb-6">About Our School</h1>
+
+      <p className="text-lg mb-6">
+        Our school is dedicated to providing quality education that prepares
+        learners for the future through innovation, ICT integration, sports,
+        and cultural development.
+      </p>
+
+      <p>
+        We strive to create an inclusive environment where learners are
+        encouraged to grow academically, socially, and physically while
+        developing confidence and leadership.
+      </p>
+    </div>
   );
 }
