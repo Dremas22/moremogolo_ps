@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <Navbar />
 
         {/* Main page content */}
-        <main className="bg-gray-700 flex-1" style={{ paddingTop: "90px" }}>
+        <main className="bg-gray-800 flex-1" style={{ paddingTop: "90px" }}>
           {children}
         </main>
 

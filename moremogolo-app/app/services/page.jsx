@@ -37,22 +37,10 @@ const sections = [
     images: ["/images/sports1.jpg", "/images/sports2.jpg", "/images/sports3.jpg"],
   },
   {
-    title: "Heritage Day Celebration",
-    description:
-      "Learners celebrate their cultures and traditions through Heritage Day activities that promote diversity and unity.",
-    images: ["/images/heritageday1.jpg", "/images/heritageday2.jpg"],
-  },
-  {
     title: "Career Dress-Up Day",
     description:
       "Career dress-up activities inspire learners to dream big by allowing them to dress as professionals they aspire to become.",
     images: ["/images/careerdressup1.jpg", "/images/careerdressup2.jpg"],
-  },
-  {
-    title: "International Learning – Teachers in China",
-    description:
-      "Our educators continuously improve their teaching methods through international exposure and collaboration.",
-    images: ["/images/TeachersInChina1.jpg", "/images/TeachersInChina2.jpg"],
   },
   {
     title: "School Environment",
@@ -64,7 +52,7 @@ const sections = [
 
 export default function Services() {
   return (
-    <div className="w-full px-6 py-16 -mt-3 bg-gray-00b4d8">
+    <div className="w-full px-6 py-16 bg-gray-800">
 
       {/* Page Title */}
       <div className="text-center mb-16">
@@ -105,55 +93,6 @@ export default function Services() {
 
         </div>
       ))}
-
-      {/* Learner Awards */}
-      <div className="mb-20 text-center">
-
-        <h2 className="text-3xl font-bold text-white mb-4">
-          Learner Achievement Awards
-        </h2>
-
-        <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
-          Our learner award ceremonies recognise academic excellence,
-          leadership, discipline and outstanding achievements in different
-          school activities.
-        </p>
-
-        <div className="flex justify-center">
-          <Image
-            src="/images/learnerawards.jpg"
-            alt="Learner Awards"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-        </div>
-
-      </div>
-
-      {/* Sponsors */}
-      <div className="text-center">
-
-        <h2 className="text-3xl font-bold text-white mb-4">
-          Our Sponsors
-        </h2>
-
-        <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
-          We are grateful for the support of our sponsors who contribute to
-          the development of education, technology and sports at our school.
-        </p>
-
-        <div className="flex justify-center">
-          <Image
-            src="/images/spectlesponsorimpala.jpg"
-            alt="Sponsors"
-            width={600}
-            height={400}
-            className="rounded-lg"
-          />
-        </div>
-
-      </div>
 
     </div>
   );
