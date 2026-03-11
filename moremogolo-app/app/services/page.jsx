@@ -37,12 +37,6 @@ const sections = [
     images: ["/images/sports1.jpg", "/images/sports2.jpg", "/images/sports3.jpg"],
   },
   {
-    title: "Career Dress-Up Day",
-    description:
-      "Career dress-up activities inspire learners to dream big by allowing them to dress as professionals they aspire to become.",
-    images: ["/images/careerdressup1.jpg", "/images/careerdressup2.jpg"],
-  },
-  {
     title: "School Environment",
     description:
       "Our school provides a safe, welcoming and supportive learning environment where every learner can thrive.",
