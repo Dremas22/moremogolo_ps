@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-black py-6 mt-auto">
+    <footer className="w-full bg-white text-black mt-auto">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
         
         {/* Education Logo */}
-        <div className="mb-4 md:mb-0">
+        <div className=" md:mb-0">
           <Image
             src="/images/education-logo.png"
             alt="Education Logo"

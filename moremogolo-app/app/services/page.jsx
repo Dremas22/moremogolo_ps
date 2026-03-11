@@ -64,14 +64,14 @@ const sections = [
 
 export default function Services() {
   return (
-    <div className="w-full px-6 py-16">
+    <div className="w-full px-6 py-16 -mt-3 bg-gray-00b4d8">
 
       {/* Page Title */}
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-black mb-4">
+        <h1 className="text-5xl font-bold text-white mb-4">
           Our Programs & Activities
         </h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
           Our school offers a variety of educational, cultural, and sporting
           activities that support the development of well-rounded learners.
         </p>
@@ -81,11 +81,11 @@ export default function Services() {
       {sections.map((section, index) => (
         <div key={index} className="mb-20 text-center">
 
-          <h2 className="text-3xl font-bold text-black mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {section.title}
           </h2>
 
-          <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+          <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
             {section.description}
           </p>
 
@@ -109,11 +109,11 @@ export default function Services() {
       {/* Learner Awards */}
       <div className="mb-20 text-center">
 
-        <h2 className="text-3xl font-bold text-black mb-4">
+        <h2 className="text-3xl font-bold text-white mb-4">
           Learner Achievement Awards
         </h2>
 
-        <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+        <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
           Our learner award ceremonies recognise academic excellence,
           leadership, discipline and outstanding achievements in different
           school activities.
@@ -134,11 +134,11 @@ export default function Services() {
       {/* Sponsors */}
       <div className="text-center">
 
-        <h2 className="text-3xl font-bold text-black mb-4">
+        <h2 className="text-3xl font-bold text-white mb-4">
           Our Sponsors
         </h2>
 
-        <p className="text-gray-700 mb-8 max-w-3xl mx-auto">
+        <p className="text-gray-300 mb-8 max-w-3xl mx-auto">
           We are grateful for the support of our sponsors who contribute to
           the development of education, technology and sports at our school.
         </p>

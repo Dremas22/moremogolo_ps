@@ -36,23 +36,25 @@ const LandingPage = () => {
         />
       </div>
 
-      {/* Vision & Mission Section */}
-      <div className="bg-gray-100 py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-black">Our Vision</h2>
-        <p className="text-lg max-w-3xl mx-auto mb-12 text-black">
-          Investing in ICT integrated inclusive education and sport development.
-        </p>
+{/* Vision & Mission Section */}
+<div className="py-16 px-6 text-center text-white">
 
-        <h2 className="text-3xl font-bold mb-6 text-black">Our Mission</h2>
-        <p className="text-lg max-w-3xl mx-auto text-black">
-          Provide quality education for best learner achievement through qualified
-          educators who can incorporate ICT in education, sports and culture, and
-          with prenatal involvement in a democratic environment.
-        </p>
-      </div>
+  <h2 className="text-5xl font-bold mb-8">Our Vision</h2>
+  <p className="text-2xl max-w-4xl mx-auto mb-16">
+    Investing in ICT integrated inclusive education and sport development.
+  </p>
+
+  <h2 className="text-5xl font-bold mb-8">Our Mission</h2>
+  <p className="text-2xl max-w-4xl mx-auto">
+    Provide quality education for best learner achievement through qualified
+    educators who can incorporate ICT in education, sports and culture, and
+    with prenatal involvement in a democratic environment.
+  </p>
+
+</div>
 
       {/* Responsive Image Section */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-center pt-10 px-6 bg-gray-800 py-10 rounded-lg">
+      <div className="w-full flex flex-col md:flex-row items-center justify-center pt-10 px-6 py-10">
         <Image
           src="/images/bgImage1.png"
           alt="Background image"

@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full bg-white shadow-md fixed top-0 z-50">
+    <div className="w-full bg-[#ffc300] shadow-md fixed top-0 z-50">
       {/* Main Navbar */}
       <div className="flex items-center justify-between bg-[#ffc300] px-4 h-20">
         
@@ -56,7 +56,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="md:hidden flex flex-col space-y-4 py-4 items-center bg-white shadow-md">
+        <nav className="md:hidden flex flex-col space-y-4 py-4 items-center bg-[#ffc300]shadow-md">
           {navItems.map((item) => (
             <Link key={item.name} href={item.path}>
               <span
