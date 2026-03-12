@@ -73,7 +73,7 @@ export default function Blog() {
   };
 
   return (
-    <div className="text-white min-h-screen px-6 py-16 bg-gray-800">
+    <div className="text-white min-h-screen px-6 py-16 ">
       {/* Page Title */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold mb-4">School Blog</h1>
@@ -89,7 +89,7 @@ export default function Blog() {
           return (
             <div
               key={index}
-              className="rounded-lg overflow-hidden shadow-lg flex flex-col bg-gray-900"
+              className="rounded-lg overflow-hidden shadow-lg flex flex-col bg-gray-600"
             >
               <div className="relative w-full h-48">
                 <Image
@@ -108,7 +108,7 @@ export default function Blog() {
                 {post.description.length > 100 && (
                   <button
                     onClick={() => toggleExpand(index)}
-                    className="mt-2 self-start bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-500 transition"
+                    className="mt-2 self-start bg-yellow-400 text-gray-900 font-semibold px-4 py-2 rounded hover:bg-yellow-700 transition"
                   >
                     {isExpanded ? "Show Less" : "Read More"}
                   </button>
